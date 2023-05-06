@@ -16,3 +16,4 @@ How to run project:
 you can simply download the files i.e index.html,style.css,script.js
 and run using your browser.
 
+note: This project contains some Bugs
