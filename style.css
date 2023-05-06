@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+li{
+    cursor: pointer;
+}
+
+.star.yellow{
+    color: #ff9e00;
+}
+
+.logo_title {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    padding: 10px;
+    background: #00c0ff80;
+    border-radius: 4px;
+    color: #f00c0c;
+    margin-right: 15px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b4594;
+    padding: 2vh 5vw;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 99999;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar {
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    backdrop-filter: saturate(180%) blur(5px);
+    background: hsla(0, 0%, 100%, .8);
+}
+
+#SearchBox {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+
+.fa {
+    padding: 0 10px;
+}
+
+#leftPanel {
+    padding: 10px;
+    box-shadow: 23px 13px 15px #a7a2a2;
+    height: 100vh;
+    width: 22vw;
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
+    margin: 3vh 0;
+}
+
+.add,
+.create {
+    width: 5vw;
+    border-radius: 5px;
+    padding: 10px 5vw;
+    text-align: center;
+    background: #1ed79ff0;
+}
+
+.create {
+    background-color: white;
+    border: 1px solid black;
+    margin: 3vh 0;
+}
+
+.add button {
+    /* padding: 10px 8vw; */
+    border: none;
+    /* background: #1ed79ff0; */
+    color: white;
+    background: transparent;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.create button {
+    background: transparent;
+    color: black;
+    /* border: 2px solid black; */
+    /* padding: 10px 7vw; */
+
+    border: none;
+    border-radius: 5px;
+}
+
+.body {
+    display: flex;
+    margin: 15vh 2vw 0 2vw;
+    justify-content: space-between;
+}
+
+.headTitle ,.card h1{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mainContentBox {
+    width: 65vw;
+
+}
+
+.mainhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.card {
+
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 2vh 1vw;
+    background: #8080801c;
+    border-radius: 10px;
+    width: 20vw;
+    height: 3vh;
+}
+
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#add-form{
+    backdrop-filter: saturate(180%) blur(5px);
+    background: rgba(0,0,0,0.5);
+    z-index: 999999999999;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 70%;
+    background: white;
+    margin: 13vh 30vw;
+    border-radius: 5px;
+    padding: 0 20px;
+    gap: 5px;
+}
+
+#form input ,#form select{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid grey;
+    width: 35vw;
+    outline: none;
+}
+
+#form .buttons {
+    margin-top: 2vh;
+}
+
+#form .buttons button{
+    border: none;
+    background: #ffc100;
+    padding: 1.5vh 2.5vw;
+    margin-left: 2vw;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+#form .buttons button:nth-child(1){
+    color: #ffc100;
+    background: transparent;
+}
+
+#closeButton{
+    margin-bottom: 5vh;
+    font-size: 20px;
+    color: #0000004a;
+}
+
+.card .moreDetails{
+    display: none;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 426px) {
+    
+    #navbar{
+        flex-direction: column;
+    }
+
+    .searchBar{
+        display: flex;
+        align-items: center;
+    }
+
+    .body{
+        margin: 20vh 2vw 0 2vw;
+    }
+
+    .mainhead .searchBar{
+        display: none;
+    }
+
+    .card{
+        width: auto;
+    }
+
+    .firstBox .add, .firstBox .create{
+        width: auto;
+    }
+
+    .rightSide{
+        margin-top: 2vh;
+    }
+
+
+    #form{
+        height: auto;
+        margin: 20vh 2vw;
+        padding: 20px;
+    }
+
+    #form input,#form select{
+        width: 70vw;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .card{
+
+        width: auto;
+    }
+}

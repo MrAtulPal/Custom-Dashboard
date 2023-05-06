@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Custom Dashboard</title>
+</head>
+
+<body>
+    <div id="add-form" style="display: none;">
+        <form id="form" >
+            <i class="fas fa-times-circle" id="closeButton"></i>
+            <label>Dashboard Type</label>
+            <input type="text" name="type">
+            <br>
+
+            <label>Dashboard Group</label>
+           <select name="group" id="selectGroup" required>
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="Test Demo">
+                Test Demo
+            </option>
+            <option value="Page Builer Demo">
+                Page Builer Demo
+            </option>
+            <option value="Metabase">
+                Metabase
+            </option>
+           </select>
+            <br>
+
+            <label>Dashboard Name</label>
+            <input type="text" id="dashboardName" required name="boardname">
+            <br>
+            <label>Dashboard ID</label>
+            <input type="number" name="id">
+            <br>
+            <label>Role ID</label>
+            <input type="text" name="roleId">
+            <div class="buttons">
+                <button type="reset">Cancel</button>
+                <button type="submit">Save</button>
+            </div>
+          </form>
+    </div>
+
+
+    <nav id="navbar">
+        <div class="logo_title">
+            <i class="fa fa-chart-pie" id="logo"></i>
+            <h3>Custom Dashboard</h3>
+        </div>
+        <div class="rightSide">
+            <div class="searchBar">
+                <input type="text" id="SearchBox" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </div>
+
+            <div class="icons">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="body">
+
+        <div id="leftPanel">
+            <div class="firstBox">
+                <div class="add">
+                    
+                    <button id="add-button"><i class="fa fa-plus"></i>Add</button>
+                </div>
+                <div class="create">
+                    
+                    <button><i class="fa fa-pen"></i>Create</button>
+                </div>
+            </div>
+            <hr>
+            <div class="secondBox">
+                <ul>
+                    <li id="allSelect"><i class="fa fa-book-open"></i>All</li>
+                    <li id="recentSelect"><i class="fa fa-clock"></i>Recent</li>
+                    <li id="starredSelect"><i class="fa fa-star " ></i>Started</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="thirdBox">
+                <ul>
+                    <li id="testDemo"><i class="fa fa-file"></i>Test Demo</li>
+                    <li id="builderDemo"><i class="fa fa-file"></i>Page Builder Demo</li>
+                    <li id="metaDemo"><i class="fa fa-file"></i>MetaDemo</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mainContentBox">
+            <div class="mainhead">
+                <h1 class="headTitle">All</h1>
+                <div class="searchBar" style="    background: #bebebd61;">
+                    <input type="text" id="SearchBox" placeholder="Filter">
+                    <i class="fa fa-search"></i>
+                    
+                </div>
+                
+            </div>
+            <hr>
+             <div class="mainBody">
+                <div id="cards-container">
+
+                </div>
+                
+             </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    </body>
+    
+    </html>
