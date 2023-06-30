@@ -1,7 +1,5 @@
 # Custom-Dashboard
 
-
-The Custom Dashboard is a dashboard where new boards can be created.
 It has Search box to search your dashboard by name and it has some of filters or sorting you can say.
 The Project is created for Credence Analytics as a Assignment and UI is given by them.
 the dashboard is responsive.
